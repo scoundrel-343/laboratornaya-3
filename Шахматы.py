@@ -10,3 +10,10 @@ while flag == False:
     else:
         flag = True
 figure = input('Введите название фигуры №1 (ферзь, ладья, слон или конь): ')
+# Являются ли поля одного цвета
+color_1 = k + l
+color_2 = m + n
+if (color_1 // 2) == (color_2 // 2):
+    print('Поля одного цвета')
+else: 
+    print('Поля разного цвета')
