@@ -41,18 +41,14 @@ def is_threatened(k, l, m, n, figure):
 
 # Функция для проверки угрозы фигурой №1 за два хода
 def is_threatened_in_two_moves(k, l, m, n, figure):
-    # Проверяем, можно ли попасть на поле (m, n) за один ход
-    if is_threatened(k, l, m, n, figure):
-        return True
-
     # Проверяем все возможные поля для первого хода
     for i in range(1, 9):
         for j in range(1, 9):
             # Проверяем, можно ли попасть на поле (i, j) за один ход
             if is_threatened(k, l, i, j, figure) and is_threatened(i, j, m, n, figure):
                 return (i, j)
-
-    return False
+            else:
+                return False
 
 # Проверяем, угрожает ли фигура №1 полю
 if is_threatened(k, l, m, n, figure):
@@ -63,6 +59,9 @@ else:
 # Проверяем, угрожает ли фигура №1 полю за два хода
 if is_threatened_in_two_moves(k, l, m, n, figure):
     result = is_threatened_in_two_moves(k, l, m, n, figure)
-    print("Можно попасть на поле за два хода, первый ход в поле ({}, {})".format(result[0], result[1]))
+    if len(result) > 1:
+        print("Можно попасть на поле за два хода, первый ход в поле ({}, {})".format(result[0], result[1]))
+    else: 
+        print("Нельзя попасть на поле за два хода")
 else:
     print("Нельзя попасть на поле за два хода")
