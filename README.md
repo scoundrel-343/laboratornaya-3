@@ -15,7 +15,7 @@
 Среда разработки: Visual Studio Code
 
 
-![image](https://github.com/scoundrel-343/laboratornaya-3/assets/146209505/f7c4cdc4-b33f-4faf-8abd-13ded29732e2)
+![image](https://github.com/scoundrel-343/laboratornaya-3/assets/146209505/a98cd8cf-0593-4cd1-ab66-4f97314b9195)
 ![image](https://github.com/scoundrel-343/laboratornaya-3/assets/146209505/35d59747-f258-401e-a8e1-cccb91b4eece)
 ![image](https://github.com/scoundrel-343/laboratornaya-3/assets/146209505/ba0991c9-c369-4451-94f1-19a9b5895033)
 
